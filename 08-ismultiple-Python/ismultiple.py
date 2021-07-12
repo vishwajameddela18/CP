@@ -14,6 +14,7 @@ def fun_ismultiple(m, n):
 	elif m%n == 0 :
 			return True
 	
+	
 	return False # replace with your solution
 
 # print(fun_ismultiple(0,0))
