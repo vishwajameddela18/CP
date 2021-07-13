@@ -10,16 +10,17 @@
 # assert(dicetoorderedhand(2,2,2) == 222)
 
 
-# def dicetoorderedhand(a, b, c):
-# 	# your code goes here
-# 	lis = []
-# 	lis.extend([str(a),str(b),str(c)])
-# 	s = ""
-# 	return "".join(lis)
-
 def dicetoorderedhand(a, b, c):
 	# your code goes here
-	s = str(a)+str(b)+str(c)
-	return s
+	lis = []
+	lis.extend([str(a),str(b),str(c)])
+	s = ""
+	lis = sorted(lis, reverse=True)
+	return int("".join((lis)))
 
-print(dicetoorderedhand(1,2,3))
+# def dicetoorderedhand(a, b, c):
+# 	# your code goes here
+# 	s = str(a)+str(b)+str(c)
+# 	return int(s)
+
+# print(dicetoorderedhand(1,2,3))
