@@ -7,6 +7,15 @@
 def lineintersection(m1, b1, m2, b2):
 	# your code goes here
 	
+	# if m1 != m2:
+	# 	x = (b2 - b1)/(m1 - m2)
+	# 	a = m1*x + b1
+	# 	b = m2*x + b2
+	# 	if a== b:
+	# 		return abs(x)
+	# else:
+	# 	return None
+		
 	if abs(m1) == abs(m2):
 		return None
 	else:
