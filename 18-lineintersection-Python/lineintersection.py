@@ -6,4 +6,23 @@
 
 def lineintersection(m1, b1, m2, b2):
 	# your code goes here
-	pass
+	
+	if abs(m1) == abs(m2):
+		return None
+	else:
+
+		x = (b2 - b1)/(m1 - m2)
+		if x > 1.0:
+			return abs(x)
+		# if b1 == b2 and m1 == m2:
+		# 	return x
+	# a = m1*x + b1
+	# b = m2*x + b2
+	# # print(a, b)
+	# if a == b:
+	# 	# print(m1, b1, m2, b2, x)
+	# 	return None
+
+	# else:
+
+		
