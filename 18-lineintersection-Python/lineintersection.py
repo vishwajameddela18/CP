@@ -4,7 +4,7 @@
 #     y = m2*x + b2
 # This function returns the x value of the point of intersection of the two lines. If the lines are parallel, or identical, the function should return None.
 
-def lineintersection(m1, b1, m2, b2):
+# def lineintersection(m1, b1, m2, b2):
 	# your code goes here
 	
 	# if m1 != m2:
@@ -16,13 +16,26 @@ def lineintersection(m1, b1, m2, b2):
 	# else:
 	# 	return None
 		
-	if abs(m1) == abs(m2):
+def ismultiple(m,n):
+	if m == 0:
+		return True
+	if n == 0:
+		return False
+	if m % n == 0:
+		return True
+	else:
+		return False
+
+def lineintersection(m1, b1, m2, b2):
+	# your code goes here
+	#checking for identical lines
+	if(b1 == b2 or m1 == m2):
+		return None
+	if(ismultiple(m1,m2) or ismultiple(m2,m1)):
 		return None
 	else:
-
-		x = (b2 - b1)/(m1 - m2)
-		if x > 1.0:
-			return abs(x)
+		
+		return (abs(int(b2-b1)/(m1-m2)))
 		# if b1 == b2 and m1 == m2:
 		# 	return x
 	# a = m1*x + b1
