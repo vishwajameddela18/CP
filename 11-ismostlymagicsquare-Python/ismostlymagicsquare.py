@@ -15,4 +15,20 @@
 
 def ismostlymagicsquare(a):
 	# Your code goes here
+	if len(a) == 1:
+		return True
+	
+
+	for i in range(len(a)):
+		rsum = 0
+		csum = 0
+		for j in range(len(a[i])):
+			rsum += a[i][j]
+			csum += a[j][i]
+		if rsum !=csum:
+			return False
+
+	return True
+	
+
 	pass
