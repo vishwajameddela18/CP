@@ -16,6 +16,21 @@
 
 def topScorer(data):
     # Your code goes here...
+    lis = data.splitlines()
+    print(lis)
+    s = ""
+    for i in range(len(lis)):
+        sum = 0
+        l = lis[i].split(",")
+        prev =0
+        for j in range(1, len(l)):
+            sum+=lis[i]
+            temp = l[j][0]
+        
+        if sum > prev:
+            prev = sum
+        elif sum == prev:
+            s = "," + temp
     return ""
 
 data = '''\
