@@ -5,15 +5,16 @@ import pytest
 
 @pytest.mark.parametrize('oscarResults,result',[ 
     (
-        { 
-            ("Best Picture", "The Shape of Water"), 
+        [ 
+             
             ("Best Actor", "Darkest Hour"),
             ("Best Actress", "Three Billboards Outside Ebbing, Missouri"),
             ("Best Director", "The Shape of Water"),
             ("Best Supporting Actor", "Three Billboards Outside Ebbing, Missouri"),
             ("Best Supporting Actress", "I, Tonya"),
+            ("Best Picture", "The Shape of Water"),
             ("Best Original Score", "The Shape of Water")
-        },
+        ],
         { 
             "Darkest Hour" : 1,
             "Three Billboards Outside Ebbing, Missouri" : 2,
@@ -21,12 +22,13 @@ import pytest
             "I, Tonya" : 1
         }
     ), (
-        {
-            ("Best Picture", "The Shape of Water"), 
+        [
+             
             ("Best Actor", "Darkest Hour"),
             ("Best Actress", "Three Billboards Outside Ebbing, Missouri"),
+            ("Best Picture", "The Shape of Water"),
             ("Best Director", "The Shape of Water"),
-        }, {
+        ], {
             "Darkest Hour": 1,
             "Three Billboards Outside Ebbing, Missouri": 1,
             "The Shape of Water": 2

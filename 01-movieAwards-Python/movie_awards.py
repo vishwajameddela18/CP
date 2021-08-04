@@ -19,6 +19,23 @@ the function should return as follows
 }
 '''
 
-def movie_awards(oscarResults):
-    # Your code goes here...
-    pass
+def movieAwards(oscarResults):
+    # print(oscarResults)
+    d = dict()
+    for i in oscarResults:
+        if i[1] in d:
+            d[i[1]]+=1
+        else:
+            d[i[1]]=1
+    return d
+s = [
+     
+    ("Best Actor", "Darkest Hour"),
+    ("Best Actress", "Three Billboards Outside Ebbing, Missouri"),
+    ("Best Director", "The Shape of Water"),
+    ("Best Supporting Actor", "Three Billboards Outside Ebbing, Missouri"),
+    ("Best Picture", "The Shape of Water"),
+    ("Best Supporting Actress", "I, Tonya"),
+    ("Best Original Score", "The Shape of Water")
+]
+# print(movieAwards(s))
