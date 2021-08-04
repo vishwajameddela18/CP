@@ -8,5 +8,28 @@
 # [ {}, {1}, {2}, {3}, {4}, {5}, {1, 2} ]
 
 def limitedPowerSet(n, k):
+    input_list = []
+    res = [{}]
+    for i in range(1, n+1):
+        input_list.append(i)
+        res.append({i})
+    
+    for j in range(1, 1 << n):
+        
+        # s = {}
+        # res.appen(s)
+        result = []
+        result.append({input_list[m] for m in range(n) if (j & (1 << m))})
+        for z in result:
+            if z not in res:
+                res.append(z)
     # Your code goes here...
-    pass
+
+    return res[:k]
+    # pass
+
+assert(limitedPowerSet(5,7) == [ {}, {1}, {2}, {3}, {4}, {5}, {1, 2} ])
+assert(limitedPowerSet(5,8) == [ {}, {1}, {2}, {3}, {4}, {5}, {1, 2}, {1, 3}])
+print("All testcases passed")
+
+# print(limitedPowerSet(5, 7))
