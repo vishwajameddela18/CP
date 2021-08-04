@@ -10,5 +10,17 @@
 
 
 def fun_getaverage(s): 
-	return 0.0
+	lis = s.split(",")
+	print(lis)
+	sum = 0.0
+	count = 0
+	for i in range(len(lis)):
+		if lis[i].isnumeric():
+			sum+= int(lis[i])
+			count+= 1
+	if sum >0.0:
 
+		return (sum/count)
+	return sum
+
+print(fun_getaverage("a,12,c,14,6,0"))
