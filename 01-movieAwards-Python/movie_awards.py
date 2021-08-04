@@ -28,14 +28,14 @@ def movie_awards(oscarResults):
         else:
             d[i[1]]=1
     return d
-s = [
+# s = [
      
-    ("Best Actor", "Darkest Hour"),
-    ("Best Actress", "Three Billboards Outside Ebbing, Missouri"),
-    ("Best Director", "The Shape of Water"),
-    ("Best Supporting Actor", "Three Billboards Outside Ebbing, Missouri"),
-    ("Best Picture", "The Shape of Water"),
-    ("Best Supporting Actress", "I, Tonya"),
-    ("Best Original Score", "The Shape of Water")
-]
+#     ("Best Actor", "Darkest Hour"),
+#     ("Best Actress", "Three Billboards Outside Ebbing, Missouri"),
+#     ("Best Director", "The Shape of Water"),
+#     ("Best Supporting Actor", "Three Billboards Outside Ebbing, Missouri"),
+#     ("Best Picture", "The Shape of Water"),
+#     ("Best Supporting Actress", "I, Tonya"),
+#     ("Best Original Score", "The Shape of Water")
+# ]
 # print(movieAwards(s))
