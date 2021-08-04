@@ -19,7 +19,7 @@ the function should return as follows
 }
 '''
 
-def movieAwards(oscarResults):
+def movie_awards(oscarResults):
     # print(oscarResults)
     d = dict()
     for i in oscarResults:
