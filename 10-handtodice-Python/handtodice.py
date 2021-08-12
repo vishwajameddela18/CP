@@ -13,16 +13,25 @@
 
 def handtodice(hand):
 	# your code goes hereP
+	x = hand
 	lis = []
-	s = str(hand)
-	# for i in range(len(s)):
-	while(hand >0):
-		lis.append(hand%10)
-		hand = hand//10
+	while(x >0):
+		digit = x%10
+		lis.append(digit)
+		x = x//10
+	lis = lis[::-1]
+	return(tuple(lis))
+	
+# 	lis = []
+# 	s = str(hand)
+# 	# for i in range(len(s)):
+# 	while(hand >0):
+# 		lis.append(hand%10)
+# 		hand = hand//10
 
-	return tuple(lis[: :-1])
+# 	return tuple(lis[: :-1])
 
 
 
 
-print(handtodice(123))
+# print(handtodice(123))
