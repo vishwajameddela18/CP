@@ -14,9 +14,25 @@ def dicetoorderedhand(a, b, c):
 	# your code goes here
 	lis = []
 	lis.extend([str(a),str(b),str(c)])
-	s = ""
 	lis = sorted(lis, reverse=True)
-	return int("".join((lis)))
+	
+	return int("".join(lis))
+
+
+
+
+
+
+
+
+
+
+
+	# lis = []
+	# lis.extend([str(a),str(b),str(c)])
+	# s = ""
+	# lis = sorted(lis, reverse=True)
+	# return int("".join((lis)))
 
 # def dicetoorderedhand(a, b, c):
 # 	# your code goes here
