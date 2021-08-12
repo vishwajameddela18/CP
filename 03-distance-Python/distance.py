@@ -5,13 +5,15 @@
 
 # import math
 
-# import math
+import math
 
 
 def fun_distance(x1, y1, x2, y2):
-	x = (x2 - x1)**2 + (y2-y1)**2
-	# your code goes here
-	return int(x**0.5)
+	return int(math.sqrt((y2-y1)**2 + (x2-x1)**2))
+
+	# x = (x2 - x1)**2 + (y2-y1)**2
+	# # your code goes here
+	# return int(x**0.5)
 
 # def fun_distance(x1, y1, x2, y2):
 	
